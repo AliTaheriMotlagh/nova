@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+public/monaco/
+public/wasm/
+.npm-cache/
+.vercel/
+*.log
+.DS_Store
+.env*.local
+shots/
+.test-*.mjs
+*.tsbuildinfo

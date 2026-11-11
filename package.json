@@ -1,0 +1,41 @@
+{
+  "name": "nova-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first browser development environment with Monaco, IndexedDB, and WebAssembly runtimes.",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "predev": "npm run prepare:assets",
+    "build": "next build",
+    "prebuild": "npm run prepare:assets",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "node scripts/copy-assets.mjs",
+    "prepare:assets": "node scripts/copy-assets.mjs"
+  },
+  "dependencies": {
+    "@babel/standalone": "8.1.1",
+    "@monaco-editor/react": "4.7.0",
+    "@xterm/addon-fit": "0.11.0",
+    "@xterm/xterm": "6.0.0",
+    "dexie": "4.4.7",
+    "esbuild-wasm": "0.28.2",
+    "jszip": "3.10.2",
+    "lucide-react": "1.72.0",
+    "marked": "18.2.0",
+    "monaco-editor": "0.57.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zustand": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
